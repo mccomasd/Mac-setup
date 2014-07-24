@@ -23,9 +23,9 @@ function installApplications {
 	if [[ $iterm =~ ^[Yy]$ ]]
 		then echo "Installing iTerm 2."
 		brew tap phinze/cask
-		phinze = 1
+		phinze=1
 		brew install brew-cask
-		brewCask = 1
+		brewCask=1
 		brew cask install iterm2
 	else echo -e "Skipping iTerm 2.\n"
 	fi
@@ -35,12 +35,12 @@ function installApplications {
 		if [ $phinze == "1" ]
 			then echo ""
 		else brew tap phinze/cask
-			phinze = 1
+			phinze=1
 		fi
 		if [ $brewCask == "1" ]
 			then echo ""
 		else brew install brew-cask
-			brewCask = 1
+			brewCask=1
 		fi
 		brew cask install google-chrome
 	else echo -e "Skipping Google Chrome.\n"
@@ -48,15 +48,15 @@ function installApplications {
 
 	if [[ $sublimeText =~ ^[Yy]$ ]]
 		then echo "Installing Sublime Text."
-		if [ $phinze =="1" ]
+		if [ $phinze == "1" ]
 			then echo ""
 		else brew tap phinze/cask
-			phinze = 1
+			phinze=1
 		fi
 		if [ $brewCask == "1" ]
 			then echo ""
 		else brew install brew-cask
-			brewCask = 1
+			brewCask=1
 		fi
 		brew cask install sublime-text
 	else echo -e "Skipping Sublime Text.\n"
@@ -67,12 +67,12 @@ function installApplications {
 		if [ $phinze == "1" ]
 			then echo ""
 		else brew tap phinze/cask
-			phinze = 1
+			phinze=1
 		fi
 		if [ $brewCask == "1" ]
 			then echo ""
 		else brew install brew-cask
-			brewCask = 1
+			brewCask=1
 		fi
 		brew cask install dash
 	else echo -e "Skipping Dash.\n"
@@ -83,12 +83,12 @@ function installApplications {
 		if [ $phinze == "1" ]
 			then echo ""
 		else brew tap phinze/cask
-			phinze = 1
+			phinze=1
 		fi
-		if [ $brewCask =="1" ]
+		if [ $brewCask == "1" ]
 			then echo ""
 		else brew install brew-cask
-			brewCask = 1
+			brewCask=1
 		fi
 		brew cask install bettertouchtool
 	else echo -e "Skipping BetterTouchTool.\n"
@@ -99,12 +99,12 @@ function installApplications {
 		if [ $phinze == "1" ]
 			then echo ""
 		else brew tap phinze/cask
-			phinze = 1
+			phinze=1
 		fi
 		if [ $brewCask == "1" ]
 			then echo ""
 		else brew install brew-cask
-			brewCask = 1
+			brewCask=1
 		fi
 		brew cask install dropbox
 	else echo -e "Skipping Dropbox.\n"
