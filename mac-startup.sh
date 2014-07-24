@@ -32,12 +32,12 @@ function installApplications {
 
 	if [[ $googleChrome =~ ^[Yy]$ ]]
 		then echo "Installing Google Chrome."
-		if [ $phinze = "1" ]
+		if [ $phinze == "1" ]
 			then echo ""
 		else brew tap phinze/cask
 			phinze = 1
 		fi
-		if [ $brewCask = "1" ]
+		if [ $brewCask == "1" ]
 			then echo ""
 		else brew install brew-cask
 			brewCask = 1
@@ -48,12 +48,12 @@ function installApplications {
 
 	if [[ $sublimeText =~ ^[Yy]$ ]]
 		then echo "Installing Sublime Text."
-		if [ $phinze = "1" ]
+		if [ $phinze =="1" ]
 			then echo ""
 		else brew tap phinze/cask
 			phinze = 1
 		fi
-		if [ $brewCask = "1" ]
+		if [ $brewCask == "1" ]
 			then echo ""
 		else brew install brew-cask
 			brewCask = 1
@@ -64,12 +64,12 @@ function installApplications {
 
 	if [[ $dash =~ ^[Yy]$ ]]
 		then echo "Installing Dash."
-		if [ $phinze = "1" ]
+		if [ $phinze == "1" ]
 			then echo ""
 		else brew tap phinze/cask
 			phinze = 1
 		fi
-		if [ $brewCask = "1" ]
+		if [ $brewCask == "1" ]
 			then echo ""
 		else brew install brew-cask
 			brewCask = 1
@@ -80,12 +80,12 @@ function installApplications {
 	
 	if [[ $betterTouchTool =~ ^[Yy]$ ]]
 		then echo "Installing BetterTouchTool."
-		if [ $phinze = "1" ]
+		if [ $phinze == "1" ]
 			then echo ""
 		else brew tap phinze/cask
 			phinze = 1
 		fi
-		if [ $brewCask = "1" ]
+		if [ $brewCask =="1" ]
 			then echo ""
 		else brew install brew-cask
 			brewCask = 1
@@ -96,12 +96,12 @@ function installApplications {
 
 	if [[ $dropbox =~ ^[Yy]$ ]]
 		then echo "Installing Dropbox."
-		if [ $phinze = "1" ]
+		if [ $phinze == "1" ]
 			then echo ""
 		else brew tap phinze/cask
 			phinze = 1
 		fi
-		if [ $brewCask = "1" ]
+		if [ $brewCask == "1" ]
 			then echo ""
 		else brew install brew-cask
 			brewCask = 1
